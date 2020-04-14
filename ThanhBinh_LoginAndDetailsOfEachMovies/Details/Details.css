@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+
+.jumbotron{
+    font-size: 60px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    color:rgb(255, 255, 255);
+    -webkit-font-smoothing: antialiased;
+    background-color: #000;
+}
+
+.text-center {
+    text-align: center!important;
+}
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 0.5px solid white;
+    
+}
+.separator::before {
+    margin: .25em;
+
+}
+.separator::after {
+    margin: .25em;
+}
+.relative{
+    background-color: #000;
+}
+.jumbotron.text-center{
+    background:black;
+    margin: 0;
+}
+h1.separator{
+    width: 35%;
+    margin: auto;
+}
+.bg-light
+{
+    background-color: #f8f9fa!important;
+}
+.section-xl {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.breadcrumb {
+    justify-content: center;
+    margin: 0;
+    background-color: #f8f9fa!important;
+
+}
+.mau {
+    color: #D81a24;
+ }
+ .mau:hover{
+     text-decoration: none;
+     color: #000;
+ }
+ .TitleO{
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: .12em;
+    text-align: center;
+    font-size: 46px;
+    padding-top: 70px;
+    font-weight: bold;
+ }
+ hr{
+     padding-bottom: 2%;
+     width:9%;
+ }
+ img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+.row
+{
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 0%;
+    padding-bottom: 1%;
+}
+.row.row-45
+{
+    margin: auto;
+}
+
+/****** Rating Stars Begin *****/
+div,label{margin:0;padding:0;}
+h1{font-size:1.5em;margin:10px;}
+/****** Style Star Rating Widget *****/
+#rating{border:none;float:left;}
+#rating>input{display:none;}/*ẩn input radio - vì chúng ta đã có label là GUI*/
+#rating>label:before{margin:5px;font-size:1.25em;font-family:FontAwesome;display:inline-block;content:"\f005";}/*1 ngôi sao*/
+#rating>.half:before{content:"\f089";position:absolute;}/*0.5 ngôi sao*/
+#rating>label{color:#ddd;float:right;}/*float:right để lật ngược các ngôi sao lại đúng theo thứ tự trong thực tế*/
+/*thêm màu cho sao đã chọn và các ngôi sao phía trước*/
+#rating>input:checked~label,
+#rating:not(:checked)>label:hover, 
+#rating:not(:checked)>label:hover~label{color:#FFD700;}
+/* Hover vào các sao phía trước ngôi sao đã chọn*/
+#rating>input:checked+label:hover,
+#rating>input:checked~label:hover,
+#rating>label:hover~input:checked~label,
+#rating>input:checked~label:hover~label{color:#FFED85;}
+/****** Rating Stars End *****/
+
+.cast-box-text{
+    position: absolute;
+    width: 100%;
+    bottom: 8px;
+    text-align: center;
+}
+.card-inner{
+    margin-left: 4rem;
+}
+.Lyc{
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: .12em;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 70px;
+    font-weight: bold;
+}
+.btnsm{
+    margin-top: 3%;
+    font-family: 'Roboto Slab', serif;
+}
