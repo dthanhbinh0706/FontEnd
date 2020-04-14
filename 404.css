@@ -1,0 +1,200 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+@import url('https://fonts.googleapis.com/css?family=sans+serif');
+html,body{
+	width: 100%;
+	height: 100%;
+	font-family: 'sans serif';
+	font-size: 20px;
+}
+
+.navbar{
+	background-color: #130202 !important;
+	height: 90px;
+}
+.navbar li a{
+	color: #fff !important;
+	margin: 0px 20px;
+	padding: 6px 10px;
+	text-decoration: none;
+}
+.dropdown{
+	position: relative;
+	display: inline-block;
+	margin-bottom: 2px;	
+}
+
+/*sub-menu*/
+.dropdown-menu{
+	display: none;
+	position: absolute;
+	margin-left: -30px;
+    width: 290px;
+    background: #151515;
+    margin-top: 1px;
+    top: 100%;
+    z-index: 10;
+    text-decoration: none;
+    transition: all 0.1s 0.1s ease-in;
+    -moz-transition: all 0.1s 0.1s ease-in;
+    -webkit-transition: all 0.1s 0.1s ease-in;
+ 
+}
+.dropdown:hover .dropdown-menu{
+	display: block;
+	text-decoration: none;
+}
+.dropdown-menu li{
+	list-style : disc inside !important;
+	color: white !important;
+	text-decoration: none !important;	
+}
+
+.dropdown-menu li a:hover{
+	color: red !important;
+}
+#home-button {
+  list-style-type: none;
+  background-color: #DF0101;
+  width: auto;
+  height: 37px;
+  transition: all 0.1s 0.2s;
+  border-radius:10px;
+}
+#home-button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+	background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+	background-color:#c62d1f;
+	text-decoration: none ;
+}
+#home-button:active {
+	position:relative;
+	top:1px;
+}
+
+.dropdown-toggle:hover {
+  list-style-type: none;
+  background-color: #DF0101;
+  width: auto;
+  height: 37px;
+  transition: all 0.1s;
+  border-radius:10px;
+}
+.list-item:hover{
+  list-style-type: none;
+  background-color: #DF0101;
+  width: auto;
+  height: 37px;
+  transition: all 0.1s;
+  border-radius:10px;
+}
+
+.text-divider {
+  display: flex;
+  align-items: center;
+  --text-divider-gap: 0.5rem;
+}
+.text-divider::before,
+.text-divider::after {
+  content: '';
+  height: 1px;
+  background-color: #fff;
+  flex-grow: 1;
+}
+.text-divider::before {
+  margin-right: var(--text-divider-gap);
+  margin-left: 450px;
+}
+.text-divider::after {
+  margin-left: var(--text-divider-gap);
+  margin-right: 450px;
+}
+.col-12 {
+	background-color: #170202;
+	height: 600px;
+	color: #fff;
+	text-align: center;
+	padding: 6em;
+}
+#back-to-home {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	background-color:#f24537;
+	-webkit-border-top-left-radius:10px;
+	-moz-border-radius-topleft:10px;
+	border-top-left-radius:10px;
+	-webkit-border-top-right-radius:10px;
+	-moz-border-radius-topright:10px;
+	border-top-right-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+	-moz-border-radius-bottomright:10px;
+	border-bottom-right-radius:10px;
+	-webkit-border-bottom-left-radius:10px;
+	-moz-border-radius-bottomleft:10px;
+	border-bottom-left-radius:10px;
+	text-indent:0;
+	border:1px solid #d02718;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:30px;
+	font-weight:bold;
+	font-style:normal;
+	height:58px;
+	line-height:58px;
+	width:300px;
+	
+	text-align:center;
+	text-shadow:1px 3px 5px #810e05;
+}
+#back-to-home:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+	background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+	background-color:#c62d1f;
+}
+#back-to-home:active {
+	position:relative;
+	top:1px;
+}
+/* This button was generated using http://tools.ngoisaoso.vn/css3button/ */
+#back-to-home a{
+	text-decoration: none;
+}
+/*--------------------footer ------*/
+#edit{
+	background-color: #151515;
+	text-align: center;
+	top: 50%;
+}
+.footer{
+   background-color: #151515;	
+   left: 0;
+   margin-bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+   height: 250px;
+   padding: 30px;
+}
+#contact{
+	margin: 15px;
+}
+#contact a{
+	margin-right: 10px;
+	color: #fff;
+}
+#contact a:hover{
+	color: red;
+}
+#final-text{
+	margin-bottom: 0px !important;
+}
